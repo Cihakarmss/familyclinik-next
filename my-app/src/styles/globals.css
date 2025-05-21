@@ -354,8 +354,8 @@ nav {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1270px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -365,15 +365,23 @@ nav {
 }
 
 .doctor-card img {
-  width: 200px !important;
-  height: 200px !important;
-  border-radius: 50%;
+  max-width: 400px;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  
+
   object-fit: cover;
   position: absolute;
-  left: 2rem;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
+
+.doctorAbout{
+  width: 100%;
+  padding-left: 100px;
+}
+  
 
 .doctorTitle {
   width: 100%;
@@ -414,8 +422,8 @@ nav {
 }
 
 .doctor-description {
-  width: 100%;
-  padding-left: 240px;
+  width: 80%;
+  padding-left: 340px;
   margin-bottom: 1.5rem;
 }
 
@@ -452,20 +460,4 @@ nav {
   font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  .doctor-card {
-    padding: 1.5rem;
-  }
 
-  .doctor-card img {
-    position: static;
-    transform: none;
-    margin-bottom: 1.5rem;
-    width: 150px !important;
-    height: 150px !important;
-  }
-
-  .doctor-description {
-    padding-left: 0;
-  }
-}

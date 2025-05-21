@@ -7,6 +7,7 @@ import Hero from "@/compenents/Hero";
 import Services from "@/compenents/Services";
 import ServicesData from "@/data/servicesCardData";
 import Meetdoctor from "@/compenents/Meetdoctor";
+import ImageCarousel from "@/compenents/ImageCarousel";
 
 export default function Home() {
   return (
@@ -40,6 +41,9 @@ export default function Home() {
           </section>
           <section>
             <Meetdoctor/>
+          </section>
+          <section>
+            <ImageCarousel />
           </section>
         </main>
       </body>
