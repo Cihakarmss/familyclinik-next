@@ -333,3 +333,139 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
 }
+.meetdoctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.meetdoctor h1 {
+  font-size: 2.5rem;
+  color: #79c0b2;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.doctor-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.doctor-card img {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.doctorTitle {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.doctorTitle h2 {
+  font-size: 2.2rem;
+  color: #79c0b2;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.doctorTitle p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.PhoneNumberDoctor {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.PhoneNumberDoctor p {
+  font-size: 1rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.PhoneNumberDoctor span {
+  color: #ccc;
+}
+
+.doctor-description {
+  width: 100%;
+  padding-left: 240px;
+  margin-bottom: 1.5rem;
+}
+
+.doctor-description p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #666;
+  text-align: left;
+}
+
+.doctorButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.doctorButtons button:first-child {
+  background-color: #79c0b2;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.doctorButtons button:last-child {
+  background-color: transparent;
+  color: #79c0b2;
+  border: 1px solid #79c0b2;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .doctor-card {
+    padding: 1.5rem;
+  }
+
+  .doctor-card img {
+    position: static;
+    transform: none;
+    margin-bottom: 1.5rem;
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .doctor-description {
+    padding-left: 0;
+  }
+}

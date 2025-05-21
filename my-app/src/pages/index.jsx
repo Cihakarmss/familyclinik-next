@@ -1,11 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
+
 
 import "@/styles/globals.css";
 import Nav from "@/compenents/Nav";
 import Hero from "@/compenents/Hero";
 import Services from "@/compenents/Services";
 import ServicesData from "@/data/servicesCardData";
+import Meetdoctor from "@/compenents/Meetdoctor";
 
 export default function Home() {
   return (
@@ -36,6 +37,9 @@ export default function Home() {
               ))}
             ;
             </div>
+          </section>
+          <section>
+            <Meetdoctor/>
           </section>
         </main>
       </body>
